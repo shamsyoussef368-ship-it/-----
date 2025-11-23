@@ -1,0 +1,84 @@
+    <!doctype html>
+    <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>مكتبة الدروس - مسار شمس</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script defer src="assets/js/main.js"></script>
+    </head>
+    <body>
+      <div class="page">
+        <div class="wrapper">
+          <header class="glass nav">
+            <div class="nav-brand">
+              <div class="brand-icon">ش</div>
+              <div class="nav-title">
+                <div class="nav-title-main">منصّة مسار شمس</div>
+                <div class="nav-title-sub">مسارك للنجاح في الثانوية العامة</div>
+              </div>
+            </div>
+            <nav class="nav-links">
+              <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="schedule.html" class="nav-link">جدول الدروس</a>
+        <a href="lessons.html" class="nav-link active">مكتبة الدروس</a>
+        <a href="assistant.html" class="nav-link">المساعد الذكي</a>
+        <a href="contact.html" class="nav-link">تواصل</a>
+            </nav>
+          </header>
+
+          <main class="glass">
+            <section class="section">
+  <h2 class="section-title">مكتبة المذكرات والكتب</h2>
+  <p class="section-sub">
+    هنا تجمع كل المذكرات والكتب والروابط اللي هتذاكر منها. أضف المذكرة للمادة
+    المناسبة، ومع كل إضافة هتظهر مادة فقط لو فيها مذكرات.
+  </p>
+
+  <div class="card" style="margin-bottom:12px;">
+    <h3>إضافة مذكرة / كتاب جديد</h3>
+    <p style="font-size:12px;color:#4b5563;margin-bottom:6px;">
+      اكتب اسم المذكرة أو الكتاب، اختر المادة، ثم أضف رابط لو حابب (لينك Google Drive / PDF / فيديو).
+      كل ما تضيفه سيتحفظ في المتصفح ولن يضيع حتى بعد إغلاق الموقع.
+    </p>
+    <form id="library-form">
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(160px,1fr));gap:8px;margin-bottom:8px;">
+        <div>
+          <label for="lib-subject">المادة:</label>
+          <select id="lib-subject">
+            <option value="اللغة العربية">اللغة العربية</option>
+            <option value="اللغة الإنجليزية">اللغة الإنجليزية</option>
+            <option value="الرياضيات">الرياضيات</option>
+            <option value="الفيزياء">الفيزياء</option>
+            <option value="الكيمياء">الكيمياء</option>
+            <option value="أحياء / جيولوجيا">أحياء / جيولوجيا</option>
+            <option value="أخرى">أخرى</option>
+          </select>
+        </div>
+        <div>
+          <label for="lib-title">اسم المذكرة / الكتاب:</label>
+          <input id="lib-title" type="text" placeholder="مثال: ملخص فيزياء ترم أول" />
+        </div>
+        <div>
+          <label for="lib-link">رابط (اختياري):</label>
+          <input id="lib-link" type="text" placeholder="لينك Google Drive أو PDF أو فيديو" />
+        </div>
+      </div>
+      <button class="btn btn-primary" type="submit">إضافة إلى المكتبة</button>
+    </form>
+  </div>
+
+  <div id="library-list"></div>
+</section>
+
+
+          </main>
+
+          <footer class="glass footer">
+            <div class="sig">تم التصميم بواسطة يوسف شمس</div>
+            <div>Shams Education — 2025</div>
+          </footer>
+        </div>
+      </div>
+    </body>
+    </html>

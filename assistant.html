@@ -1,0 +1,89 @@
+    <!doctype html>
+    <html lang="ar" dir="rtl">
+    <head>
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      <title>المساعد الذكي - مسار شمس</title>
+      <link rel="stylesheet" href="assets/css/style.css">
+      <script defer src="assets/js/main.js"></script>
+    </head>
+    <body>
+      <div class="page">
+        <div class="wrapper">
+          <header class="glass nav">
+            <div class="nav-brand">
+              <div class="brand-icon">ش</div>
+              <div class="nav-title">
+                <div class="nav-title-main">منصّة مسار شمس</div>
+                <div class="nav-title-sub">مسارك للنجاح في الثانوية العامة</div>
+              </div>
+            </div>
+            <nav class="nav-links">
+              <a href="index.html" class="nav-link">الرئيسية</a>
+        <a href="schedule.html" class="nav-link">جدول الدروس</a>
+        <a href="lessons.html" class="nav-link">مكتبة الدروس</a>
+        <a href="assistant.html" class="nav-link active">المساعد الذكي</a>
+        <a href="contact.html" class="nav-link">تواصل</a>
+            </nav>
+          </header>
+
+          <main class="glass">
+            <section class="section">
+  <h2 class="section-title">المساعد الذكي (تنظيم الطلب)</h2>
+  <p class="section-sub">
+    بدلاً من كتابة طلب عشوائي لأي شات ذكاء اصطناعي، اكتب هنا اسم الدرس أو الفكرة،
+    وسنجهز لك صيغة احترافية ترسلها له.
+  </p>
+  <div class="card">
+    <form id="assistant-form">
+      <div style="margin-bottom:8px;">
+        <label for="assistant-q">اكتب اسم الدرس أو موضوع المذاكرة:</label>
+        <textarea id="assistant-q" placeholder="مثال: &quot;العوامل المؤثرة في سرعة التفاعل الكيميائي&quot; أو &quot;حل ٢٠ مسألة على قوانين نيوتن&quot;"></textarea>
+      </div>
+      <button class="btn btn-primary" type="submit">تجهيز صيغة الطلب</button>
+    </form>
+    <div id="assistant-out" class="assistant-output">
+      اكتب الدرس أو الموضوع، وسنجهز لك جملة جاهزة يمكنك نسخها لأي مساعد ذكاء اصطناعي.
+    </div>
+  <div class="card" style="margin-top:10px;">
+  <h3>عداد التركيز ⏱️</h3>
+  <p style="font-size:12px;color:#4b5563;margin-bottom:6px;">
+    اكتب زمن المذاكرة الكلي بالدقائق (مثلاً 180 دقيقة = ٣ ساعات)، وزمن الراحة بين كل فترة
+    مذاكرة والتانية. العداد يقسم الوقت إلى فترات مذاكرة ٣٠ دقيقة وبينها راحات تلقائيًا.
+  </p>
+  <form id="focus-form" onsubmit="return false;">
+    <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(140px,1fr));gap:8px;margin-bottom:8px;">
+      <div>
+        <label for="focus-minutes">دقائق المذاكرة الكلية:</label>
+        <input id="focus-minutes" type="number" min="1" value="180" />
+      </div>
+      <div>
+        <label for="focus-break-minutes">دقائق الراحة بين الفترات:</label>
+        <input id="focus-break-minutes" type="number" min="0" value="5" />
+      </div>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:6px;margin-bottom:8px;">
+      <button id="focus-start" class="btn btn-primary" type="button">ابدأ العداد</button>
+      <button id="focus-pause" class="btn btn-outline" type="button">إيقاف مؤقت</button>
+      <button id="focus-reset" class="btn btn-outline" type="button">إعادة ضبط</button>
+    </div>
+    <div style="font-size:12px;color:#4b5563;margin-bottom:4px;">
+      العداد يقسم الوقت تلقائيًا إلى فترات مذاكرة ٣٠ دقيقة، بينها راحات بالمدة التي اخترتها.
+    </div>
+    <div id="focus-display" style="font-weight:700;font-size:20px;margin-bottom:4px;">00:00</div>
+    <div id="focus-status" style="font-size:12px;color:#374151;">في انتظار البدء 🎧</div>
+  </form>
+</div>
+
+</section>
+
+          </main>
+
+          <footer class="glass footer">
+            <div class="sig">تم التصميم بواسطة يوسف شمس</div>
+            <div>Shams Education — 2025</div>
+          </footer>
+        </div>
+      </div>
+    </body>
+    </html>
